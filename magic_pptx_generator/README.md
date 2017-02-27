@@ -1,4 +1,4 @@
-# Macig PPTX generator
+# Magic PPTX generator
 
 This is a magical script generating a simlpe pptx from words for a lecturer in a horrible haste. ;)
 
