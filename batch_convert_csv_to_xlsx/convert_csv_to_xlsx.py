@@ -14,4 +14,4 @@ for csvfile in glob.glob(os.path.join('.', '*.csv')):
 		for r, row in enumerate(reader, start=1):
 			for c, val in enumerate(row, start=1):
 				ws.cell(row=r, column=c).value = val
-	wb.save(csvfile + '.xlsx')
+	wb.save(csvfile[:-4] + '.xlsx')
