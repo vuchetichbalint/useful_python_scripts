@@ -101,7 +101,7 @@ While it's running visit `localhost:1234` in your browser, you should get someth
 Okay, it's not the most beautiful page we've ever seen, but it's functioning and the pimping is unfortunately out of the current scope.
 
 You may noticed we input the data in the layout *explicitly*, so there's no way it ever changes. 
-Now we begin a journey, step-by-step we will achieve that the data is loaded automatically in the background.
+Now we begin a journey, step-by-step we will achieve that the data will be loaded automatically in the background.
 
 
 ### First step
