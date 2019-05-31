@@ -1,0 +1,30 @@
+version: "3"
+
+services: 
+  web:
+    container_name: "flask_api"
+#     image: tiangolo/uwsgi-nginx-flask:python3.7
+    build: ./flask
+    ports:
+       - "81:80"
+    volumes:
+      - ./flask/app:/app
+    # environment:
+    #   - FLASK_APP=main.py
+    #   - FLASK_DEBUG=1
+    #   - 'RUN=flask run --host=0.0.0.0 --port=80'
+    command: python3 /app/main.py
+#      - pip3 install -r ./app/requirements.txt
+
+
+  minio:
+    container_name: "minio1"
+    image: minio/minio
+    volumes:
+      - ./minio1:/export
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: bence
+      MINIO_SECRET_KEY: tollasmadar
+    command: minio server /export
