@@ -1,0 +1,25 @@
+# mac-en
+ssh -C2TnN -o ServerAliveInterval=30 -D 8080 balint@ccnet1.tmit.bme.hu -v
+
+sys preferences -> network -> proxies -> socks proxy -> beír: localhost:8080 
+vissza: kikattint és auto (esetleg http és https)
+
+
+
+# ubuntu-n
+$ ssh -C2TnN -o ServerAliveInterval=30 -D 8080 balint@ccnet1.tmit.bme.hu
+
+# ha nem menne, akkor a kapcsolókat kiszedni
+# majd beállítani a socks hostot: 127.0.0.1 és 8080-as port
+
+ssh -D 8080 balint@ccnet1.tmit.bme.hu
+
+
+
+
+
+
+
+#---------------------------------------------
+# https://hackertarget.com/ssh-examples-tunnels/
+#---------------------------------------------

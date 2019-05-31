@@ -1,0 +1,1 @@
+sudo swapon /dev/sda5
