@@ -1,1 +1,3 @@
 etc/slackbot/message_db.json
+etc/slackbot/ping_bot.py
+etc/slackbot/parrot_app.py
